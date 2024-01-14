@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'org.kkpa'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+project(':playground-util') {
+    task helloPGUtil {
+        doLast {
+            println "I'm ${project.name}"
+        }
+    }
+}
+
+dependencies {}
+
+java {
+    sourceCompatibility(JavaVersion.VERSION_21)
+}
+
+allprojects {
+    // Common configuration
+
+    task('helloPlayGround') {
+        println "I'm $project.name"
+    }
+}
