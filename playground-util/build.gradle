@@ -1,11 +1,4 @@
 plugins {
     id 'java-library'
 }
-
-group 'org.kkpa'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
 jar.enabled = true

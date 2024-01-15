@@ -1,3 +1,5 @@
 rootProject.name = 'java-playground'
 include 'playground-util'
+include 'playground-core'
+include 'hackerrank-solutions'
 

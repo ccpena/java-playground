@@ -1,4 +1,4 @@
  ext.libsTest = [
-    'jupiterApi': 'org.junit.jupiter:junit-jupiter-api:5.9.1',
-    'jupierEngine': 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+    'jupiterApi':    'org.junit.jupiter:junit-jupiter-api:5.9.1',
+    'jupiterEngine': 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
  ]
