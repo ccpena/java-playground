@@ -3,4 +3,7 @@ include 'playground-util'
 include 'playground-core'
 include 'hackerrank-solutions'
 include 'playground-algorithms'
+include 'playground-frameworks-core'
+include 'playground-frameworks'
+include 'playground-frameworks-springboot'
 

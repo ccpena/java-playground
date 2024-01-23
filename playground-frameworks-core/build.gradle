@@ -1,0 +1,43 @@
+plugins {
+    id 'java-library'
+}
+jar.enabled = true
+
+dependencies {
+    //Lombok
+        compileOnly 'org.projectlombok:lombok:1.18.30'
+    	annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    	testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    	testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+    // JPA Provider
+        implementation 'org.hibernate:hibernate-core:5.6.9.Final'
+        implementation 'org.hibernate:hibernate-entitymanager:5.6.9.Final'
+        implementation 'org.postgresql:postgresql:42.2.5'
+        implementation 'org.jooq:jooq:3.17.4'
+        implementation 'org.jooq:jooq-codegen:3.17.4'
+        implementation 'org.jooq:jooq-meta:3.17.4'
+}
+
+// Configure jOOQ code generation
+def generatedDir = file("${buildDir}/generated-src/jooq")
+
+task generateJooq(type: JavaExec) {
+    classpath = configurations.runtimeClasspath
+    main = 'org.jooq.codegen.GenerationTool'
+    args = [
+        'src/main/resources/jooq-codegen.xml',
+        '-d', generatedDir
+    ]
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir generatedDir
+        }
+    }
+}
+
+compileJava {
+    dependsOn generateJooq
+}

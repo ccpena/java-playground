@@ -1,0 +1,23 @@
+<!-- jooq-codegen.xml -->
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.15.0.xsd">
+    <jdbc>
+        <!-- Database connection details -->
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://localhost:5432/framework_test</url>
+        <user>postgres</user>
+        <password>postgres</password>
+    </jdbc>
+    <generator>
+        <database>
+            <name>org.jooq.meta.postgres.PostgresDatabase</name>
+            <!-- Include tables, etc. -->
+            <includes>.*</includes>
+            <inputSchema>public</inputSchema>
+        </database>
+        <target>
+            <!-- Generated code directory -->
+            <packageName>jooq_generated</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
