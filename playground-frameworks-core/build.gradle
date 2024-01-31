@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id "org.jooq.jooq-codegen-gradle" version "3.19.3"
 }
 jar.enabled = true
 
@@ -19,14 +20,15 @@ dependencies {
 }
 
 // Configure jOOQ code generation
-def generatedDir = file("${buildDir}/generated-src/jooq")
+def generatedDir = file("build/generated-src/jooq")
 
 task generateJooq(type: JavaExec) {
     classpath = configurations.runtimeClasspath
     main = 'org.jooq.codegen.GenerationTool'
     args = [
-        'src/main/resources/jooq-codegen.xml',
-        '-d', generatedDir
+        '/media/kkpa/Data/Developer/github/JavaPlayground/playground-frameworks-core/src/main/resources/jooq-codegen.xml',
+        '-d',
+        generatedDir.toString()
     ]
 }
 
