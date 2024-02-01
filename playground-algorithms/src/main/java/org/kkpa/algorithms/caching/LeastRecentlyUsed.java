@@ -40,7 +40,7 @@ public class LeastRecentlyUsed {
     public LRUCache(int capacity) {
       // Hey, magical box, when you're about 75% full, start thinking about making some space
       // The ordering mode - true for access-order (least-recently-used), false for insertion-order(remove from the head. First insertion)
-      super(capacity, 0.50f, false);
+      super(capacity, 0.75f, true);
       this.capacity = capacity;
     }
 
