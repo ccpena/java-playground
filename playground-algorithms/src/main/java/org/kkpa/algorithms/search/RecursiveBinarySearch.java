@@ -1,6 +1,6 @@
 package org.kkpa.algorithms.search;
 
-public class BinarySearchRecursive {
+public class RecursiveBinarySearch {
 
 
   public static int search(int[] numbers, int value) {
