@@ -16,7 +16,7 @@ public class RecursiveBinarySearch {
   }
 
   private static int search(int[] numbers, int value, int start, int end) {
-    if (start > end) {
+    if (start >= end) {
       return -1;
     }
     int middleIdx = start + (end - start) / 2;
