@@ -1,15 +1,9 @@
 package org.kkpa.algorithms.search;
 
-public class BinarySearchSolution {
+public class BinarySearchRecursive {
 
 
-  public static void main(String[] args) {
-    BinarySearchSolution bs = new BinarySearchSolution();
-    int found = bs.search(new int[]{0, 100, 200, 300, 400, 500, 600, 700, 800, 900}, 100);
-    System.out.println("Found: " + found);
-  }
-
-  private int search(int[] numbers, int value) {
+  public static int search(int[] numbers, int value) {
     int middle = numbers.length / 2;
     if (numbers[middle] == value) {
       return middle;
@@ -21,7 +15,7 @@ public class BinarySearchSolution {
     }
   }
 
-  private int search(int[] numbers, int value, int start, int end) {
+  private static int search(int[] numbers, int value, int start, int end) {
     if (start > end) {
       return -1;
     }
@@ -36,4 +30,7 @@ public class BinarySearchSolution {
     }
   }
 
+  public static Integer search(Integer[] integers, Integer target) {
+    return search(integers, target);
+  }
 }
