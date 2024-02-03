@@ -4,6 +4,10 @@ public class RecursiveBinarySearch {
 
 
   public static int search(int[] numbers, int value) {
+    if (numbers == null || numbers.length == 0) {
+      return -1;
+    }
+
     int middle = numbers.length / 2;
     if (numbers[middle] == value) {
       return middle;

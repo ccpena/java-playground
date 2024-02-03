@@ -7,6 +7,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinarySearchTest {
 
+  @Test
+  public void testBinarySearchEmptyNotFound() {
+    int[] testArray = {};
+    int target = 3;
+    assertEquals(-1, RecursiveBinarySearch.search(testArray, target));
+  }
+
+  @Test
+  public void testBinarySearchSingleFound() {
+    int[] testArray = {3};
+    int target = 3;
+    assertEquals(0, RecursiveBinarySearch.search(testArray, target));
+  }
 
   @Test
   public void testBinarySearchRecursiveFound() {
