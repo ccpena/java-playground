@@ -1,4 +1,4 @@
-package org.kkpa.playgroundframeworksspringboot.components.user;
+package org.kkpa.playgroundsb.components.user;
 
 import components.UserFacade;
 import components.user.domain.UserEntity;

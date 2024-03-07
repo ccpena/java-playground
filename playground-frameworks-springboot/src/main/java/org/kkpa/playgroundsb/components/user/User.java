@@ -1,4 +1,4 @@
-package org.kkpa.playgroundframeworksspringboot.components.user;
+package org.kkpa.playgroundsb.components.user;
 
 import components.user.domain.UserEntity;
 import lombok.Data;

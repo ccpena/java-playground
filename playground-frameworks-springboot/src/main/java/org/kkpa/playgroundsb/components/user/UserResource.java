@@ -1,4 +1,4 @@
-package org.kkpa.playgroundframeworksspringboot.components.user;
+package org.kkpa.playgroundsb.components.user;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

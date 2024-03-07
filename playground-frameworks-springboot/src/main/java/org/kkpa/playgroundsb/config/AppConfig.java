@@ -1,4 +1,4 @@
-package org.kkpa.playgroundframeworksspringboot.config;
+package org.kkpa.playgroundsb.config;
 
 import components.UserFacade;
 import org.springframework.context.annotation.Bean;

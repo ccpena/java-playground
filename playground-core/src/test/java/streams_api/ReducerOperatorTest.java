@@ -1,5 +1,6 @@
 package streams_api;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.kkpa.pgutil.builders.AddressBuilder;
@@ -8,6 +9,7 @@ import org.kkpa.pgutil.models.user.User;
 import org.kkpa.streams_api.ReducerOperator;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ReducerOperatorTest {
   private User userOne;
@@ -26,5 +28,11 @@ public class ReducerOperatorTest {
   @Test
   public void findOldestUser() {
     System.out.println(reducerOperator.findOldestUser(allUsers));
+  }
+
+  @Test
+  public void findFirstNameAlphabetically() {
+    Stream<String> names = Stream.of("Alice", "Bob", "Charlie");
+    Assertions.assertEquals("Alice", reducerOperator.firstNameOf(names));
   }
 }

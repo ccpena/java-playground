@@ -26,7 +26,7 @@ task generateJooq(type: JavaExec) {
     classpath = configurations.runtimeClasspath
     main = 'org.jooq.codegen.GenerationTool'
     args = [
-        '/media/kkpa/Data/Developer/github/JavaPlayground/playground-frameworks-core/src/main/resources/jooq-codegen.xml',
+        '/media/kkpa/Data/Developer/github/java-projects/JavaPlayground/playground-frameworks-core/src/main/resources/jooq-codegen.xml',
         '-d',
         generatedDir.toString()
     ]
@@ -38,8 +38,4 @@ sourceSets {
             srcDir generatedDir
         }
     }
-}
-
-compileJava {
-    dependsOn generateJooq
 }
