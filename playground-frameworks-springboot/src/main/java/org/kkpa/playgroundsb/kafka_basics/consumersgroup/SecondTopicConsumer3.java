@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Slf4j
-public class SecondTopicConsumer2 extends SecondTopicConsumerGroup {
+public class SecondTopicConsumer3 extends SecondTopicConsumerGroup {
 
   @KafkaListener(topics = TOPIC_NAME, groupId = GROUP_ID)
   public void processMessage(ConsumerRecord<String, String> record) {
@@ -15,6 +15,6 @@ public class SecondTopicConsumer2 extends SecondTopicConsumerGroup {
   }
 
   @Override String getConsumerID() {
-    return "2";
+    return "3";
   }
 }

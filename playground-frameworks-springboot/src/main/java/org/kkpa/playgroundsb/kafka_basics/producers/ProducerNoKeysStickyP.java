@@ -32,8 +32,7 @@ public class ProducerNoKeysStickyP {
 
   @PostConstruct
   public void init() {
-    sendMessageWithNO_Key(-1, SECOND_TOPIC);
-    sleep(10000);
+    sleep(1000);
     produceWithStickyPartition();
   }
 
@@ -44,7 +43,7 @@ public class ProducerNoKeysStickyP {
    */
   private void produceWithStickyPartition() {
     String topic = "second_topic";
-    IntStream.rangeClosed(0, 2)
+    IntStream.rangeClosed(0, 1)
             .forEach(n -> {
               sendMessageWithNO_Key(n, SECOND_TOPIC);
             });

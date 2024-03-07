@@ -33,11 +33,11 @@ public class ProducerWithKeys {
 
   @PostConstruct
   public void init() {
-    IntStream.rangeClosed(0, 3).forEach(i -> {
+    IntStream.rangeClosed(0, 1).forEach(i -> {
       IntStream.rangeClosed(0, 3)
               .forEach(n -> {
                 String key = "id_" + n;
-                String value = String.format("i_%d:n_%d", i, n);
+                String value = String.format("[%d:%d]", i, n);
                 sendMessageWithKey(key, value);
               });
     });
