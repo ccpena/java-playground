@@ -33,6 +33,9 @@ public class ProducerWithKeys {
 
   @PostConstruct
   public void init() {
+    if (5 < 7) {
+      return;
+    }
     IntStream.rangeClosed(0, 1).forEach(i -> {
       IntStream.rangeClosed(0, 3)
               .forEach(n -> {

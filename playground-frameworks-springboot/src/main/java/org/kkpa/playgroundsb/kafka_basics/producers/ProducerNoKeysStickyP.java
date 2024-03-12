@@ -33,7 +33,7 @@ public class ProducerNoKeysStickyP {
   @PostConstruct
   public void init() {
     sleep(1000);
-    produceWithStickyPartition();
+    //produceWithStickyPartition();
   }
 
   /**
