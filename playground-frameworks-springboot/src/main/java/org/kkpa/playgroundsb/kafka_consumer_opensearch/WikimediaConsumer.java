@@ -56,10 +56,12 @@ public class WikimediaConsumer {
 
   @Async
   public void sentToOpenSearch(BulkRequest bulkRequest) {
-    RestHighLevelClient openSearchClient = openSearchService.createOpenSearchClient(false);
     try {
-      BulkResponse bulkResponse = openSearchClient.bulk(bulkRequest, RequestOptions.DEFAULT);
-      log.info("Inserted to Open Search" + bulkResponse.getItems().length + " record(s).");
+      if (bulkRequest.numberOfActions() > 0) {
+        RestHighLevelClient openSearchClient = openSearchService.createOpenSearchClient(false);
+        BulkResponse bulkResponse = openSearchClient.bulk(bulkRequest, RequestOptions.DEFAULT);
+        log.info("Inserted to Open Search" + bulkResponse.getItems().length + " record(s).");
+      }
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
