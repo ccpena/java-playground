@@ -19,12 +19,12 @@ import java.util.List;
 
 @Component
 @Slf4j
-public class WikimediaConsumer {
+public class WikimediaConsumer2 {
   protected static final String TOPIC_NAME = "wikimedia.recentchange";
   protected static final String GROUP_ID = "consumer-opensearch-group";
   private final OpenSearchService openSearchService;
 
-  public WikimediaConsumer(OpenSearchService openSearchService) {
+  public WikimediaConsumer2(OpenSearchService openSearchService) {
     this.openSearchService = openSearchService;
   }
 
@@ -60,7 +60,7 @@ public class WikimediaConsumer {
       if (bulkRequest.numberOfActions() > 0) {
         RestHighLevelClient openSearchClient = openSearchService.createOpenSearchClient(false);
         BulkResponse bulkResponse = openSearchClient.bulk(bulkRequest, RequestOptions.DEFAULT);
-        log.info("Inserted " + getConsumerID() + " to Open Search" + bulkResponse.getItems().length + " record(s).");
+        log.info("Consumer " + getConsumerID() + " Inserted to Open Search" + bulkResponse.getItems().length + " record(s).");
 
         //TODO Here if you can commit offsets manually after the batch is consumed.
       }
@@ -81,6 +81,6 @@ public class WikimediaConsumer {
   }
 
   String getConsumerID() {
-    return "1";
+    return "2";
   }
 }

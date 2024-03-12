@@ -17922,3 +17922,1508 @@ INFO  Metrics - Metrics scheduler closed
 INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
 INFO  Metrics - Metrics reporters closed
 INFO  AppInfoParser - App info kafka.producer for producer-1 unregistered
+INFO  PlaygroundFrameworksSpringbootApplication - Starting PlaygroundFrameworksSpringbootApplication using Java 21.0.1 with PID 29730 (/media/kkpa/Data/Developer/github/java-projects/JavaPlayground/playground-frameworks-springboot/build/classes/java/main started by kkpa in /media/kkpa/Data/Developer/github/java-projects/JavaPlayground)
+INFO  PlaygroundFrameworksSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+INFO  TomcatWebServer - Tomcat initialized with port 8888 (http)
+INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+INFO  StandardService - Starting service [Tomcat]
+INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+INFO  [/pgf/api] - Initializing Spring embedded WebApplicationContext
+INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3610 ms
+INFO  OpenSearchService - Open Search Service Init...
+INFO  OpenSearchService - The Wikimedia Index already exits
+INFO  OpenSearchService - The Wikimedia Index has been created!
+INFO  EventSource - Starting EventSource client using URI: https://stream.wikimedia.org/v2/stream/recentchange
+INFO  WikiMediaChangesProducer - Wikimedia Changes Producer
+INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+INFO  TomcatWebServer - Tomcat started on port 8888 (http) with context path '/pgf/api'
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710270906207
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-1, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-opensearch-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-opensearch-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710270906256
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Subscribed to topic(s): wikimedia.recentchange
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-opensearch-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-opensearch-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710270906286
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Subscribed to topic(s): wikimedia.recentchange
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710270906324
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-4, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710270906342
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-5, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  PlaygroundFrameworksSpringbootApplication - Started PlaygroundFrameworksSpringbootApplication in 13.852 seconds (process running for 16.859)
+INFO  Metadata - [Consumer clientId=consumer-groupST-5, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  Metadata - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  Metadata - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  Metadata - [Consumer clientId=consumer-groupST-4, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  Metadata - [Consumer clientId=consumer-groupST-1, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: need to re-join with the given member-id: consumer-consumer-opensearch-group-2-613ded81-803b-4431-a462-f4140228b96d
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-1-6f40d5cb-ee82-4053-885b-696e8b551794
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-5-76d69680-81f6-4c86-ab85-a6f7010e16fc
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: need to re-join with the given member-id: consumer-consumer-opensearch-group-3-8e5af8cc-9b7a-49c7-b502-896b2e94948b
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-4-f86ee245-8d6d-486f-9c5c-51ccae45a652
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Successfully joined group with generation Generation{generationId=33, memberId='consumer-groupST-4-f86ee245-8d6d-486f-9c5c-51ccae45a652', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Successfully joined group with generation Generation{generationId=33, memberId='consumer-groupST-5-76d69680-81f6-4c86-ab85-a6f7010e16fc', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Successfully joined group with generation Generation{generationId=33, memberId='consumer-groupST-1-6f40d5cb-ee82-4053-885b-696e8b551794', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Successfully joined group with generation Generation{generationId=13, memberId='consumer-consumer-opensearch-group-2-613ded81-803b-4431-a462-f4140228b96d', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Successfully joined group with generation Generation{generationId=13, memberId='consumer-consumer-opensearch-group-3-8e5af8cc-9b7a-49c7-b502-896b2e94948b', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Finished assignment for group at generation 13: {consumer-consumer-opensearch-group-3-8e5af8cc-9b7a-49c7-b502-896b2e94948b=Assignment(partitions=[]), consumer-consumer-opensearch-group-2-613ded81-803b-4431-a462-f4140228b96d=Assignment(partitions=[wikimedia.recentchange-0])}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Finished assignment for group at generation 33: {consumer-groupST-5-76d69680-81f6-4c86-ab85-a6f7010e16fc=Assignment(partitions=[second_topic-2]), consumer-groupST-4-f86ee245-8d6d-486f-9c5c-51ccae45a652=Assignment(partitions=[second_topic-1]), consumer-groupST-1-6f40d5cb-ee82-4053-885b-696e8b551794=Assignment(partitions=[second_topic-0])}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Successfully synced group in generation Generation{generationId=13, memberId='consumer-consumer-opensearch-group-3-8e5af8cc-9b7a-49c7-b502-896b2e94948b', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Successfully synced group in generation Generation{generationId=13, memberId='consumer-consumer-opensearch-group-2-613ded81-803b-4431-a462-f4140228b96d', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Notifying assignor about the new Assignment(partitions=[])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Notifying assignor about the new Assignment(partitions=[wikimedia.recentchange-0])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Adding newly assigned partitions: 
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Successfully synced group in generation Generation{generationId=33, memberId='consumer-groupST-5-76d69680-81f6-4c86-ab85-a6f7010e16fc', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Successfully synced group in generation Generation{generationId=33, memberId='consumer-groupST-4-f86ee245-8d6d-486f-9c5c-51ccae45a652', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-2])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-1])
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions assigned: []
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Successfully synced group in generation Generation{generationId=33, memberId='consumer-groupST-1-6f40d5cb-ee82-4053-885b-696e8b551794', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-0])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Adding newly assigned partitions: second_topic-2
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Adding newly assigned partitions: wikimedia.recentchange-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Adding newly assigned partitions: second_topic-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Adding newly assigned partitions: second_topic-1
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Setting offset for partition second_topic-1 to the committed offset FetchPosition{offset=112, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Setting offset for partition second_topic-2 to the committed offset FetchPosition{offset=132, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Setting offset for partition second_topic-0 to the committed offset FetchPosition{offset=177, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Setting offset for partition wikimedia.recentchange-0 to the committed offset FetchPosition{offset=2871, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=2}}
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions assigned: [wikimedia.recentchange-0]
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-2]
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-0]
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-1]
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Revoke previously assigned partitions wikimedia.recentchange-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Revoke previously assigned partitions second_topic-1
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Revoke previously assigned partitions second_topic-0
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-1]
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-0]
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions revoked: [wikimedia.recentchange-0]
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Member consumer-consumer-opensearch-group-3-8e5af8cc-9b7a-49c7-b502-896b2e94948b sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Member consumer-groupST-4-f86ee245-8d6d-486f-9c5c-51ccae45a652 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Member consumer-consumer-opensearch-group-2-613ded81-803b-4431-a462-f4140228b96d sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Revoke previously assigned partitions second_topic-2
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Member consumer-groupST-1-6f40d5cb-ee82-4053-885b-696e8b551794 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-4, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-2]
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Member consumer-groupST-5-76d69680-81f6-4c86-ab85-a6f7010e16fc sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-1, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-5, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-consumer-opensearch-group-3 unregistered
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: Consumer stopped
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Metrics reporters closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-consumer-opensearch-group-2 unregistered
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: Consumer stopped
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-1 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-5 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-4 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  PlaygroundFrameworksSpringbootApplication - Starting PlaygroundFrameworksSpringbootApplication using Java 21.0.1 with PID 30070 (/media/kkpa/Data/Developer/github/java-projects/JavaPlayground/playground-frameworks-springboot/build/classes/java/main started by kkpa in /media/kkpa/Data/Developer/github/java-projects/JavaPlayground)
+INFO  PlaygroundFrameworksSpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+INFO  TomcatWebServer - Tomcat initialized with port 8888 (http)
+INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+INFO  StandardService - Starting service [Tomcat]
+INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+INFO  [/pgf/api] - Initializing Spring embedded WebApplicationContext
+INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1521 ms
+INFO  OpenSearchService - Open Search Service Init...
+INFO  OpenSearchService - The Wikimedia Index already exits
+INFO  OpenSearchService - The Wikimedia Index has been created!
+INFO  EventSource - Starting EventSource client using URI: https://stream.wikimedia.org/v2/stream/recentchange
+INFO  WikiMediaChangesProducer - Wikimedia Changes Producer
+INFO  EventSource - Connected to EventSource stream.
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+INFO  KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710271063850
+INFO  Metadata - [Producer clientId=producer-1] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  TransactionManager - [Producer clientId=producer-1] ProducerId set to 6006 with epoch 0
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271061001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271061001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271062001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271059001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271066001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271064001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271066001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271066001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271063001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271065001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271066001}] 
+INFO  WikiMediaChangesProducer - Sending Wikimedia LastEventId: [{"topic":"eqiad.mediawiki.recentchange","partition":0,"offset":-1},{"topic":"codfw.mediawiki.recentchange","partition":0,"timestamp":1710271066001}] 
+INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+INFO  TomcatWebServer - Tomcat started on port 8888 (http) with context path '/pgf/api'
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710271067430
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-1, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-opensearch-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-opensearch-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710271067451
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Subscribed to topic(s): wikimedia.recentchange
+INFO  Metadata - [Consumer clientId=consumer-groupST-1, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-consumer-opensearch-group-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-opensearch-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  Metadata - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] (Re-)joining group
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710271067463
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Subscribed to topic(s): wikimedia.recentchange
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  Metadata - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-1-ad10c7c8-65f5-4a68-89dc-0dd0c907a94f
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: need to re-join with the given member-id: consumer-consumer-opensearch-group-2-83a5c0e9-5577-433c-b5a4-369211b24ccc
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: need to re-join with the given member-id: consumer-consumer-opensearch-group-3-271fe781-87a3-472c-b01a-2b2d8c25bb05
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  AppInfoParser - Kafka startTimeMs: 1710271067480
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-4, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] (Re-)joining group
+INFO  ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-groupST-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = groupST
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  Metadata - [Consumer clientId=consumer-groupST-4, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  AppInfoParser - Kafka version: 3.6.0
+INFO  AppInfoParser - Kafka commitId: 60e845626d8a465a
+INFO  AppInfoParser - Kafka startTimeMs: 1710271067491
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-5, groupId=groupST] Subscribed to topic(s): second_topic
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] (Re-)joining group
+INFO  Metadata - [Consumer clientId=consumer-groupST-5, groupId=groupST] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-4-4c8444f9-6be8-4d5a-9b36-d3bddb7e849c
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] (Re-)joining group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: need to re-join with the given member-id: consumer-groupST-5-785b5214-bd69-4089-8079-88ed20bf8697
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] (Re-)joining group
+INFO  PlaygroundFrameworksSpringbootApplication - Started PlaygroundFrameworksSpringbootApplication in 9.602 seconds (process running for 10.718)
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Successfully joined group with generation Generation{generationId=15, memberId='consumer-consumer-opensearch-group-2-83a5c0e9-5577-433c-b5a4-369211b24ccc', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Successfully joined group with generation Generation{generationId=35, memberId='consumer-groupST-5-785b5214-bd69-4089-8079-88ed20bf8697', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Successfully joined group with generation Generation{generationId=35, memberId='consumer-groupST-4-4c8444f9-6be8-4d5a-9b36-d3bddb7e849c', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Successfully joined group with generation Generation{generationId=35, memberId='consumer-groupST-1-ad10c7c8-65f5-4a68-89dc-0dd0c907a94f', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Successfully joined group with generation Generation{generationId=15, memberId='consumer-consumer-opensearch-group-3-271fe781-87a3-472c-b01a-2b2d8c25bb05', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Finished assignment for group at generation 15: {consumer-consumer-opensearch-group-2-83a5c0e9-5577-433c-b5a4-369211b24ccc=Assignment(partitions=[wikimedia.recentchange-0]), consumer-consumer-opensearch-group-3-271fe781-87a3-472c-b01a-2b2d8c25bb05=Assignment(partitions=[])}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Finished assignment for group at generation 35: {consumer-groupST-4-4c8444f9-6be8-4d5a-9b36-d3bddb7e849c=Assignment(partitions=[second_topic-1]), consumer-groupST-1-ad10c7c8-65f5-4a68-89dc-0dd0c907a94f=Assignment(partitions=[second_topic-0]), consumer-groupST-5-785b5214-bd69-4089-8079-88ed20bf8697=Assignment(partitions=[second_topic-2])}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Successfully synced group in generation Generation{generationId=35, memberId='consumer-groupST-5-785b5214-bd69-4089-8079-88ed20bf8697', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Successfully synced group in generation Generation{generationId=15, memberId='consumer-consumer-opensearch-group-2-83a5c0e9-5577-433c-b5a4-369211b24ccc', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Successfully synced group in generation Generation{generationId=35, memberId='consumer-groupST-4-4c8444f9-6be8-4d5a-9b36-d3bddb7e849c', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Successfully synced group in generation Generation{generationId=15, memberId='consumer-consumer-opensearch-group-3-271fe781-87a3-472c-b01a-2b2d8c25bb05', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-1])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Successfully synced group in generation Generation{generationId=35, memberId='consumer-groupST-1-ad10c7c8-65f5-4a68-89dc-0dd0c907a94f', protocol='range'}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-2])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Notifying assignor about the new Assignment(partitions=[wikimedia.recentchange-0])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Notifying assignor about the new Assignment(partitions=[])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Notifying assignor about the new Assignment(partitions=[second_topic-0])
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Adding newly assigned partitions: 
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions assigned: []
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Adding newly assigned partitions: second_topic-1
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Adding newly assigned partitions: second_topic-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Adding newly assigned partitions: second_topic-2
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Adding newly assigned partitions: wikimedia.recentchange-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Setting offset for partition second_topic-1 to the committed offset FetchPosition{offset=112, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Setting offset for partition second_topic-2 to the committed offset FetchPosition{offset=132, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Setting offset for partition wikimedia.recentchange-0 to the committed offset FetchPosition{offset=2871, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=2}}
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Setting offset for partition second_topic-0 to the committed offset FetchPosition{offset=177, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=22}}
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-2]
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-0]
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions assigned: [wikimedia.recentchange-0]
+INFO  KafkaMessageListenerContainer - groupST: partitions assigned: [second_topic-1]
+INFO  WikimediaConsumer - Wikimedia Consumer 1 Records 141 
+INFO  WikimediaConsumer - Inserted 1 to Open Search141 record(s).
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Member consumer-consumer-opensearch-group-3-271fe781-87a3-472c-b01a-2b2d8c25bb05 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Revoke previously assigned partitions second_topic-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Revoke previously assigned partitions second_topic-2
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Revoke previously assigned partitions wikimedia.recentchange-0
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Revoke previously assigned partitions second_topic-1
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-0]
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: partitions revoked: [wikimedia.recentchange-0]
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-2]
+INFO  KafkaMessageListenerContainer - groupST: partitions revoked: [second_topic-1]
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Member consumer-groupST-1-ad10c7c8-65f5-4a68-89dc-0dd0c907a94f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Member consumer-consumer-opensearch-group-2-83a5c0e9-5577-433c-b5a4-369211b24ccc sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Member consumer-groupST-4-4c8444f9-6be8-4d5a-9b36-d3bddb7e849c sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Member consumer-groupST-5-785b5214-bd69-4089-8079-88ed20bf8697 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-5, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-1, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-3, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-5, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  DefaultKafkaConsumerFactory$ExtendedKafkaConsumer - [Consumer clientId=consumer-groupST-4, groupId=groupST] Unsubscribed all topics or patterns and assigned partitions
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-1, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Resetting generation and member id due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-consumer-opensearch-group-2, groupId=consumer-opensearch-group] Request joining group due to: consumer pro-actively leaving the group
+INFO  ConsumerCoordinator - [Consumer clientId=consumer-groupST-4, groupId=groupST] Request joining group due to: consumer pro-actively leaving the group
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-consumer-opensearch-group-3 unregistered
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: Consumer stopped
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-5 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-1 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.consumer for consumer-groupST-4 unregistered
+INFO  KafkaMessageListenerContainer - groupST: Consumer stopped
+INFO  AppInfoParser - App info kafka.consumer for consumer-consumer-opensearch-group-2 unregistered
+INFO  KafkaMessageListenerContainer - consumer-opensearch-group: Consumer stopped
+INFO  KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+INFO  Metrics - Metrics scheduler closed
+INFO  Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  Metrics - Metrics reporters closed
+INFO  AppInfoParser - App info kafka.producer for producer-1 unregistered

@@ -59,7 +59,7 @@ public class WikiMediaChangesProducer {
 
   @Async
   public void closeEventSource() {
-    sleep(5000);
+    sleep(25000);
     eventSource.close();
   }
 
